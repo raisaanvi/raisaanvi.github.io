@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Saanvi</title>
+  <meta name="description" content="This is my portfolio page">
+  <meta name="author" content="Saanvi">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Average&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+<header class ="main_nav green">
+  <div class= "container">
+  <div class = "twelve columns">
+    <div class = "logo"><a href="https://www.codercookies.com">Coder Cookies</a></div>
+  </div>
+  </div>
+</header>
+
+
+<div class="container">
+        <div id="typewriter" style="background-color: orange" class="twelve columns">
+            <h2 id="typetext0"> >></h2>
+          </div>
+    </div>
+
+
+<div class="container">
+        <div id="typewriter" style="background-color: orange" class="twelve columns">
+            <h2 id="typetext1"> >></h2>
+          </div>
+    </div>
+
+<div class= "container"> 
+      <div id="typewriter" style="background-color: orange" class="twelve columns">
+        <h2 id="typetext2"> >></h2>
+      </div>
+</div>
+
+<div class="container main">
+    <div class="row">
+      <div class= "four columns">
+        <img src="https://cdn.pixabay.com/photo/2017/05/09/13/33/laptop-2298286_1280.png">
+      </div>
+      <div class="four columns">
+        <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg">
+      </div>
+      <div class="four columns">
+        <img src="https://cdn.pixabay.com/photo/2016/10/16/16/33/dual-screen-1745705_1280.png">
+      </div>
+    </div>
+  </div>
+
+
+<div class="green row">
+    <div class="container">
+       <div class="three columns">
+         <img  class="avatar" src="images/CoderCookiesNewLogo.jpg">
+
+       </div>
+       <div class="nine columns">
+        <h2 class="bio">ABOUT ME</h2>
+         <p> I like to paint and draw, coding is very fun! I am looking forward to school next year! I hope to have a very fun summer! building this website has been a lot of fun, it was great watching all the code I had learned throughout the past year come togther.   </p>
+       </div>
+    </div>
+</div>
+
+<footer>
+  <ul class="social">
+    <li class="facebook"><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+    <li class="twitter"><a href="https://www.twitter.com"><i class="fab fa-twitter"></a></i></li>
+    <li class="instagram"><a href="https://www.instagram.com"><i class="fab fa-instagram"></a></i></li> 
+    <li class="youtube"><a href="https://www.youtube.com"><i class="fab fa-youtube"></a></i></li>
+
+    
+  </ul>
+</footer>
+
+<footer>
+  <div class="twelve columns">
+    <p class="copyright">2021 copyright codercookies website devolped by saanvi </p>
+
+    
+  </div>
+  
+</footer>
+
+ 
+</body>
+
+<script type="text/javascript">
+
+
+  
+    var allText = ["My name is saanvi","I like coding","I like drawing"]; 
+    var currentIndex0 = 0;
+
+    var textHeader0 = document.getElementById("typetext0")
+    var MyVar0;
+
+   function add0()
+    {
+      var text = allText[0].substring(0,currentIndex0+1)
+      textHeader0.innerHTML = ">>" + text; 
+      currentIndex0 = currentIndex0 + 1;
+
+      if(text === allText[0])
+      {
+        clearInterval(MyVar0);
+        setTimeout(function(){
+          MyVar0 = setInterval(remove0,50);
+        },1000)
+      }
+
+    }
+
+    function remove0()
+    {
+      var text = allText[0].substring(0,currentIndex0-1)
+      textHeader0.innerHTML= ">>" + text; 
+      currentIndex0 = currentIndex0 - 1;
+
+      if(text === "")
+      {
+        clearInterval(MyVar0);
+        currentIndex0=0;
+        setTimeout(function(){
+          MyVar0 = setInterval(add0,50);
+        },1000)
+      }
+
+    }
+
+
+    var currentIndex1 = 0;
+
+    var textHeader1 = document.getElementById("typetext1")
+    var MyVar1;
+
+   function add1()
+    {
+      var text = allText[1].substring(0,currentIndex0+1)
+      textHeader1.innerHTML = ">>" + text; 
+      currentIndex1 = currentIndex0 + 1;
+
+      if(text === allText[1])
+      {
+        clearInterval(MyVar1);
+        setTimeout(function(){
+          MyVar1 = setInterval(remove1,100);
+        },1000)
+      }
+
+    }
+
+    function remove1()
+    {
+      var text = allText[1].substring(0,currentIndex0-1)
+      textHeader1.innerHTML= ">>" + text; 
+      currentIndex1 = currentIndex0 - 1;
+
+      if(text === "")
+      {
+        clearInterval(MyVar1);
+        currentIndex1=0;
+        setTimeout(function(){
+          MyVar1 = setInterval(add1,100);
+        },1000)
+      }
+
+    }
+
+
+var currentIndex2 = 0;
+
+    var textHeader2 = document.getElementById("typetext2")
+    var MyVar2;
+
+   function add2()
+    {
+      var text = allText[2].substring(0,currentIndex0+1)
+      textHeader2.innerHTML = ">>" + text; 
+      currentIndex2 = currentIndex0 + 1;
+
+      if(text === allText[2])
+      {
+        clearInterval(MyVar2);
+        setTimeout(function(){
+          MyVar1 = setInterval(remove2,50);
+        },1000)
+      }
+
+    }
+
+    function remove2()
+    {
+      var text = allText[2].substring(0,currentIndex0-1)
+      textHeader2.innerHTML= ">>" + text; 
+      currentIndex2 = currentIndex0 - 1;
+
+      if(text === "")
+      {
+        clearInterval(MyVar2);
+        currentIndex2=0;
+        setTimeout(function(){
+          MyVar2 = setInterval(add2,50);
+        },1000)
+      }
+
+    }
+
+add0();
+remove0();
+
+add1();
+remove1();
+
+add2();
+remove2();
+  
+
+</script>
+</html>
+
+
+    
+
